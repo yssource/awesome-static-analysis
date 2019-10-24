@@ -24,7 +24,8 @@ please add it to `data/data.yml`.
 - The order of the tools is not relevant.
 - Please add as many categories as possible.
 
-Once you're done, call `make lint` to check for errors.
+Once you're done, call `make render` to check for errors and create the final
+rendered `README.md`. Finally, create a pull request with these changes.
 
 # How to mark a tool as unmaintained/deprecated
 
