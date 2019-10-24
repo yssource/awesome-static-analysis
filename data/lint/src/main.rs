@@ -5,6 +5,7 @@
 extern crate serde_derive;
 
 use std::env;
+use std::error::Error;
 use std::process;
 
 mod lints;
@@ -24,7 +25,7 @@ fn valid(tool: &Tool) -> bool {
     lints.iter().all(|lint| lint(&tool))
 }
 
-fn main() -> Result<(), Box<std::error::Error>> {
+fn main() -> Result<(), Box<dyn Error>> {
     let files: Vec<_> = env::args().skip(1).collect();
     if files.len() != 1 {
         println!("Expected a single input file");

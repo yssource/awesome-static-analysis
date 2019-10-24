@@ -1,6 +1,6 @@
 use std::cmp::Ordering;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "lowercase")]
 pub enum Type {
     Tool,
@@ -8,13 +8,14 @@ pub enum Type {
     List,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Eq)]
 pub struct Tool {
     pub name: String,
     pub url: String,
     pub description: String,
     pub categories: Vec<String>,
-    pub proprietary: bool,
+    pub proprietary: Option<bool>,
+    pub deprecated: Option<bool>,
     #[serde(rename = "type")]
     pub ttype: Type,
 }
@@ -24,8 +25,6 @@ impl PartialEq for Tool {
         self.name.to_lowercase() == other.name.to_lowercase()
     }
 }
-
-impl Eq for Tool {}
 
 impl PartialOrd for Tool {
     fn partial_cmp(&self, other: &Tool) -> Option<Ordering> {

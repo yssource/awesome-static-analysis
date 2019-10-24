@@ -4,70 +4,60 @@
   description: An organization for the development of analyzers (diagnostics and code fixes) using the .NET Compiler Platform.
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: abapOpenChecks
   url: "https://github.com/larshp/abapOpenChecks"
   description: Enhances the SAP Code Inspector with new and customizable checks.
   categories:
     - abap
-  proprietary: false
   type: tool
 - name: aether
   url: "https://github.com/codecombat/aether"
   description: "Lint, analyze, normalize, transform, sandbox, run, step through, and visualize user JavaScript, in node or the browser."
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: After the Deadline
   url: "https://afterthedeadline.com/"
   description: "spell, style and grammar checker"
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: ale
   url: "https://github.com/w0rp/ale"
   description: Asynchronous Lint Engine for Vim and NeoVim with support for many languages
   categories:
     - ide plugins
-  proprietary: false
   type: tool
 - name: ameba
   url: "https://github.com/veelenga/ameba"
   description: A static code analysis tool for Crystal
   categories:
     - crystal
-  proprietary: false
   type: tool
 - name: anchore
   url: "https://anchore.io/"
   description: "Discover, analyze, and certify container images"
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: android-lint-summary
   url: "https://github.com/passy/android-lint-summary"
   description: "Combines lint errors of multiple projects into one output, check lint results of multiple sub-projects at once."
   categories:
     - mobile
-  proprietary: false
   type: tool
 - name: ansible-lint
   url: "https://github.com/willthames/ansible-lint"
   description: Checks playbooks for practices and behaviour that could potentially be improved
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: ArchUnit
   url: "https://www.archunit.org/"
   description: Unit test your Java architecture
   categories:
     - java
-  proprietary: false
   type: tool
 - name: Attackflow Extension
   url: "https://www.attackflow.com/Extension"
@@ -81,168 +71,144 @@
   description: a tool to find common security issues in Python code
   categories:
     - python
-  proprietary: false
   type: tool
 - name: bellybutton
   url: "https://github.com/hchasestevens/bellybutton"
   description: a linting engine supporting custom project-specific rules
   categories:
     - python
-  proprietary: false
   type: tool
 - name: BinSkim
   url: "https://github.com/Microsoft/binskim"
   description: A binary static analysis tool that provides security and correctness results for Windows portable executables.
   categories:
     - binaries
-  proprietary: false
   type: tool
 - name: Black
   url: "https://github.com/ambv/black"
   description: The uncompromising Python code formatter
   categories:
     - python
-  proprietary: false
   type: tool
 - name: brakeman
   url: "https://github.com/presidentbeef/brakeman"
   description: A static analysis security vulnerability scanner for Ruby on Rails applications
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: cane
   url: "https://github.com/square/cane"
   description: Code quality threshold checking as part of your build
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: cargo-audit
   url: "https://github.com/RustSec/cargo-audit"
   description: "Audit Cargo.lock for crates with security vulnerabilities reported to the [RustSec Advisory Database](https://github.com/RustSec/advisory-db/)."
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: cargo-inspect
   url: "https://github.com/mre/cargo-inspect"
   description: Inspect Rust code without syntactic sugar to see what the compiler does behind the curtains.
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: CBMC
   url: "http://www.cprover.org/cbmc/"
   description: "bounded model-checker for C programs, user-defined assertions, standard assertions, several coverage metric analyses"
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: cfn-lint
   url: "https://github.com/awslabs/cfn-python-lint"
   description: AWS Labs CloudFormation linter.
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: cfn_nag
   url: "https://github.com/stelligent/cfn_nag"
   description: A linter for AWS CloudFormation templates.
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: Checker Framework
   url: "https://github.com/typetools/checker-framework/"
   description: "Pluggable type-checking for Java http://checkerframework.org/"
   categories:
     - java
-  proprietary: false
   type: tool
 - name: checkmake
   url: "https://github.com/mrtazz/checkmake"
   description: Linter / Analyzer for Makefiles
   categories:
     - build tools
-  proprietary: false
   type: tool
 - name: checkstyle
   url: "https://github.com/checkstyle/checkstyle"
   description: checking Java source code for adherence to a Code Standard or set of validation rules (best practices)
   categories:
     - java
-  proprietary: false
   type: tool
 - name: ChkTeX
   url: "http://www.nongnu.org/chktex/"
   description: A linter for LaTex which catches some typographic errors LaTeX oversees.
   categories:
     - latex
-  proprietary: false
   type: tool
 - name: ciocheck
   url: "https://github.com/ContinuumIO/ciocheck"
   description: "linter, formatter and test suite helper. As a linter, it is a wrapper around `pep8`, `pydocstyle`, `flake8`, and `pylint`."
   categories:
     - python wrappers
-  proprietary: false
   type: tool
 - name: ck
   url: "https://github.com/mauricioaniche/ck"
   description: calculates Chidamber and Kemerer object-oriented metrics by processing the source Java files
   categories:
     - java
-  proprietary: false
   type: tool
 - name: ckjm
   url: "http://www.spinellis.gr/sw/ckjm/"
   description: calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files
   categories:
     - java
-  proprietary: false
   type: tool
 - name: clair
   url: "https://github.com/coreos/clair"
   description: Vulnerability Static Analysis for Containers
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: clang-tidy
   url: "http://clang.llvm.org/extra/clang-tidy/"
   description: clang static analyser
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: ClassGraph
   url: "https://github.com/classgraph/classgraph"
   description: a classpath and module path scanner for querying or visualizing class metadata or class relatedness
   categories:
     - java
-  proprietary: false
   type: tool
 - name: clippy
   url: "https://github.com/Manishearth/rust-clippy"
   description: A code linter to catch common mistakes and improve your Rust code
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: ClosureLinter
   url: "https://github.com/google/closure-linter"
   description: "ensures that all of your project's JavaScript code follows the guidelines in the Google JavaScript Style Guide. It can also automatically fix many common errors"
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: CMetrics
   url: "https://github.com/MetricsGrimoire/CMetrics"
   description: Measures size and complexity for C files
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: Codacy
   url: "https://www.codacy.com/"
@@ -253,10 +219,9 @@
   type: service
 - name: Code Analysis Rule Collection
   url: "https://carc.codeplex.com/"
-  description: "Contains a set of diagnostics, code fixes and refactorings built on the Microsoft .NET Compiler Platform \"Roslyn\"."
+  description: 'Contains a set of diagnostics, code fixes and refactorings built on the Microsoft .NET Compiler Platform "Roslyn".'
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: Code Climate
   url: "https://codeclimate.com/"
@@ -270,21 +235,18 @@
   description: "An analyzer library for C# and VB that uses Roslyn to produce refactorings, code analysis, and other niceties."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: codechecker
   url: "https://github.com/Ericsson/codechecker"
   description: a defect database and viewer extension for the Clang Static Analyzer
   categories:
     - build tools
-  proprietary: false
   type: tool
 - name: Codecheker
   url: "https://github.com/Ericsson/codechecker"
   description: "static analysis of C/C++ code, with web GUI"
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: CodeFactor
   url: "https://codefactor.io"
@@ -305,21 +267,18 @@
   description: A set of tslint rules for static code analysis of Angular 2 TypeScript projects.
   categories:
     - typescript
-  proprietary: false
   type: tool
 - name: CodeNarc
   url: "https://github.com/CodeNarc/CodeNarc"
   description: "a static analysis tool for Groovy source code, enabling monitoring and enforcement of many coding standards and best practices"
   categories:
     - groovy
-  proprietary: false
   type: tool
 - name: Codepeer
   url: "http://www.adacore.com/codepeer"
   description: detects run-time and logic errors
   categories:
     - ada
-  proprietary: false
   type: tool
 - name: CodeRush
   url: "https://www.devexpress.com/products/coderush/"
@@ -340,63 +299,54 @@
   description: check code for common misspellings
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: coffeelint
   url: "https://github.com/clutchski/coffeelint"
   description: A style checker that helps keep CoffeeScript code clean and consistent.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: CogniCrypt
   url: "https://www.eclipse.org/cognicrypt/"
   description: checks Java source and byte code for incorrect uses of cryptographic APIs
   categories:
     - java
-  proprietary: false
   type: tool
 - name: cohesion
   url: "https://github.com/mschwager/cohesion"
   description: a tool for measuring Python class cohesion
   categories:
     - python
-  proprietary: false
   type: tool
 - name: collector
   url: "https://github.com/banyanops/collector"
   description: "Run arbitrary scripts inside containers, and gather useful information"
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: complexity-report
   url: "https://github.com/jared-stilwell/complexity-report"
   description: Software complexity analysis for JavaScript projects
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: cookstyle
   url: "https://docs.chef.io/cookstyle.html"
   description: Cookstyle is a linting tool based on the RuboCop Ruby linting tool for Chef cookbooks
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: Corrode
   url: "https://github.com/jameysharp/corrode"
   description: Semi-automatic translation from C to Rust. Could reveal bugs in the original implementation by showing Rust compiler warnings and errors.
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: cppcheck
   url: "https://github.com/danmar/cppcheck"
   description: static analysis of C/C++ code
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: CppDepend
   url: "https://www.cppdepend.com"
@@ -410,98 +360,84 @@
   description: "automated C++ checker that follows Google's style guide"
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: cqmetrics
   url: "https://github.com/dspinellis/cqmetrics"
   description: quality metrics for C code
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: credo
   url: "https://github.com/rrrene/credo"
   description: A static code analysis tool with a focus on code consistency and teaching.
   categories:
     - elixir
-  proprietary: false
   type: tool
 - name: crystal
   url: "https://crystal-lang.org/"
   description: The Crystal compiler has built-in linting functionality.
   categories:
     - crystal
-  proprietary: false
   type: tool
 - name: CScout
   url: "https://www.spinellis.gr/cscout/"
   description: complexity and quality metrics for for C and C preprocessor code
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: CSharpEssentials
   url: "https://github.com/DustinCampbell/CSharpEssentials"
   description: "C# Essentials is a collection of Roslyn diagnostic analyzers, code fixes and refactorings that make it easy to work with C# 6 language features."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: CSS Stats
   url: "https://github.com/cssstats/cssstats"
   description: Potentially interesting stats on stylesheets
   categories:
     - css
-  proprietary: false
   type: tool
 - name: CSScomb
   url: "https://github.com/csscomb/csscomb.js"
   description: a coding style formatter for CSS. Supports own configurations to make style sheets beautiful and consistent
   categories:
     - css
-  proprietary: false
   type: tool
 - name: CSSLint
   url: "https://github.com/CSSLint/csslint"
   description: Does basic syntax checking and finds problematic patterns or signs of inefficiency
   categories:
     - css
-  proprietary: false
   type: tool
 - name: cyclocomp
   url: "https://github.com/MangoTheCat/cyclocomp"
   description: Quantifies the cyclomatic complexity of R functions / expressions.
   categories:
     - r
-  proprietary: false
   type: tool
 - name: D-scanner
   url: "https://github.com/dlang-community/D-Scanner"
   description: D-Scanner is a tool for analyzing D source code
   categories:
     - dlang
-  proprietary: false
   type: tool
 - name: dagda
   url: "https://github.com/eliasgranderubio/dagda"
   description: Perform static analysis of known vulnerabilities in docker images/containers.
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: dawnscanner
   url: "https://github.com/thesp0nge/dawnscanner"
   description: "a static analysis security scanner for ruby written web applications. It supports Sinatra, Padrino and Ruby on Rails frameworks."
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: deadcode
   url: "https://github.com/tsenart/deadcode"
   description: Finds unused code.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: DeepScan
   url: "https://deepscan.io"
@@ -515,28 +451,24 @@
   description: A set of utilities for working with PO files to ease development and improve quality.
   categories:
     - translation
-  proprietary: false
   type: tool
 - name: dephpend
   url: "https://github.com/mihaeu/dephpend"
   description: Dependency analysis tool
   categories:
     - php
-  proprietary: false
   type: tool
 - name: deprecation-detector
   url: "https://github.com/sensiolabs-de/deprecation-detector"
   description: Finds usages of deprecated (Symfony) code
   categories:
     - php
-  proprietary: false
   type: tool
 - name: deptrac
   url: "https://github.com/sensiolabs-de/deptrac"
   description: Enforce rules for dependencies between software layers.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: Designite
   url: "http://www.designite-tools.com"
@@ -550,210 +482,180 @@
   description: detection of design patterns in PHP code
   categories:
     - php
-  proprietary: false
   type: tool
 - name: detekt
   url: "https://github.com/arturbosch/detekt"
   description: Static code analysis for Kotlin code.
   categories:
     - kotlin
-  proprietary: false
   type: tool
 - name: DevSkim
   url: "https://github.com/Microsoft/DevSkim"
   description: "Inline, realtime security analysis. Works with multiple programming languages and IDEs (VS, VS Code, Sublime Text, ...)."
   categories:
     - ide plugins
-  proprietary: false
   type: tool
 - name: dingo-hunter
   url: "https://github.com/nickng/dingo-hunter"
   description: Static analyser for finding deadlocks in Go.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Docker Label Inspector
   url: "https://github.com/garethr/docker-label-inspector"
   description: Lint and validate Dockerfile labels
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: dotenv-linter
   url: "https://github.com/wemake-services/dotenv-linter"
   description: Linting dotenv files like a charm.
   categories:
     - config files
-  proprietary: false
   type: tool
 - name: dupl
   url: "https://github.com/mibk/dupl"
   description: Reports potentially duplicated code.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: EasyCodingStandard
   url: "https://github.com/Symplify/EasyCodingStandard"
   description: "combine [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) and [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)"
   categories:
     - php
-  proprietary: false
   type: tool
 - name: electrolysis
   url: "https://github.com/Kha/electrolysis"
   description: A tool for formally verifying Rust programs by transpiling them into definitions in the Lean theorem prover.
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: elvis
   url: "https://github.com/inaka/elvis"
   description: Erlang Style Reviewer
   categories:
     - erlang
-  proprietary: false
   type: tool
 - name: ember-template-lint
   url: "https://github.com/rwjblue/ember-template-lint"
   description: Linter for Ember or Handlebars templates.
   categories:
     - template-languages
-  proprietary: false
   type: tool
 - name: errcheck
   url: "https://github.com/kisielk/errcheck"
   description: Check that error return values are used.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Error-prone
   url: "https://github.com/google/error-prone"
   description: Catch common Java mistakes as compile-time errors
   categories:
     - java
-  proprietary: false
   type: tool
 - name: escomplex
   url: "https://github.com/jared-stilwell/escomplex"
   description: Software complexity analysis of JavaScript-family abstract syntax trees.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: eslint
   url: "https://github.com/eslint/eslint"
   description: A fully pluggable tool for identifying and reporting on patterns in JavaScript
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: Esprima
   url: "https://github.com/jquery/esprima"
   description: ECMAScript parsing infrastructure for multipurpose analysis
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: exakat
   url: "https://github.com/exakat/exakat"
   description: An automated code reviewing engine for PHP
   categories:
     - php
-  proprietary: false
   type: tool
 - name: fb-contrib
   url: "https://github.com/mebigfatguy/fb-contrib"
   description: A plugin for FindBugs with additional bug detectors
   categories:
     - java
-  proprietary: false
   type: tool
 - name: Find Security Bugs
   url: "https://find-sec-bugs.github.io/"
   description: IDE/SonarQube plugin for security audits of Java web applications.
   categories:
     - java
-  proprietary: false
   type: tool
 - name: flake8
   url: "https://github.com/PyCQA/flake8"
   description: "a wrapper around `pyflakes`, `pycodestyle` and `mccabe`"
   categories:
     - python wrappers
-  proprietary: false
   type: tool
 - name: flawfinder
   url: "http://www.dwheeler.com/flawfinder/"
   description: finds possible security weaknesses
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: flay
   url: "https://github.com/seattlerb/flay"
   description: Flay analyzes code for structural similarities.
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: flen
   url: "https://github.com/lafolle/flen"
   description: Get info on length of functions in a Go package.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: flint++
   url: "http://l2program.co.uk/category/flint"
   description: "cross-platform, zero-dependency port of flint, a lint program for C++ developed and used at Facebook."
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: flog
   url: "https://github.com/seattlerb/flog"
   description: "Flog reports the most tortured code in an easy to read pain report. The higher the score, the more pain the code is in."
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: flow
   url: "https://flow.org/"
   description: A static type checker for JavaScript.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: FlowDroid
   url: "https://github.com/secure-software-engineering/soot-infoflow-android"
   description: static taint analysis tool for Android applications
   categories:
     - mobile
-  proprietary: false
   type: tool
 - name: foodcritic
   url: "http://www.foodcritic.io/"
   description: A lint tool that checks Chef cookbooks for common problems.
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: Frama-C
   url: "http://frama-c.com/"
   description: a sound and extensible static analyzer for C code
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: FSharpLint
   url: "https://github.com/fsprojects/FSharpLint"
   description: "Lint tool for F#"
   categories:
     - "f# #"
-  proprietary: false
   type: tool
 - name: Gamma
   url: "https://mygamma.io"
@@ -767,203 +669,174 @@
   description: Inspects source code for security problems by scanning the Go AST.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: gawk --lint
   url: "https://www.gnu.org/software/gawk/manual/html_node/Options.html"
   description: warns about constructs that are dubious or nonportable to other awk implementations.
   categories:
     - awk
-  proprietary: false
   type: tool
 - name: Gendarme
   url: "http://www.mono-project.com/docs/tools+libraries/tools/gendarme/"
   description: Gendarme inspects programs and libraries that contain code in ECMA CIL format (Mono and .NET).
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: gherkin-lint
   url: "https://github.com/vsiakka/gherkin-lint"
   description: A linter for the Gherkin-Syntax written in Javascript.
   categories:
     - gherkin
-  proprietary: false
   type: tool
 - name: gixy
   url: "https://github.com/yandex/gixy"
   description: a tool to analyze Nginx configuration. The main goal is to prevent misconfiguration and automate flaw detection.
   categories:
     - config files
-  proprietary: false
   type: tool
 - name: Go Meta Linter
   url: "https://github.com/alecthomas/gometalinter"
   description: Concurrently run Go lint tools and normalise their output.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go tool vet --shadow
   url: "https://golang.org/cmd/vet/#hdr-Shadowed_variables"
   description: Reports variables that may have been unintentionally shadowed.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go vet
   url: "https://golang.org/cmd/vet/"
   description: Examines Go source code and reports suspicious.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go-consistent
   url: "https://github.com/Quasilyte/go-consistent"
   description: Analyzer that helps you to make your Go programs more consistent.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go-critic
   url: "https://github.com/go-critic/go-critic"
   description: Go source code linter that maintains checks which are currently not implemented in other linters.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go-staticcheck
   url: "https://github.com/dominikh/go-tools/tree/master/cmd/staticcheck"
   description: "go vet on steroids, similar to ReSharper for C#."
   categories:
     - go
-  proprietary: false
   type: tool
 - name: go/ast
   url: "https://golang.org/pkg/go/ast/"
   description: Package ast declares the types used to represent syntax trees for Go packages.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: goconst
   url: "https://github.com/jgautheron/goconst"
   description: Finds repeated strings that could be replaced by a constant.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: gocyclo
   url: "https://github.com/fzipp/gocyclo"
   description: Calculate cyclomatic complexities of functions in Go source code.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: gofmt -s
   url: "https://golang.org/cmd/gofmt/"
   description: Checks if the code is properly formatted and could not be further simplified.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: goimports
   url: "https://godoc.org/golang.org/x/tools/cmd/goimports"
   description: Checks missing or unreferenced package imports.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: GolangCI-Lint
   url: "https://github.com/golangci/golangci-lint"
   description: "Alternative to `Go Meta Linter`: GolangCI-Lint is a linters aggregator."
   categories:
     - go
-  proprietary: false
   type: tool
 - name: golint
   url: "https://github.com/golang/lint"
   description: Prints out coding style mistakes in Go source code.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: goodpractice
   url: "http://mangothecat.github.io/goodpractice/"
   description: Analyses the source code for R packages and provides best-practice recommendations.
   categories:
     - r
-  proprietary: false
   type: tool
 - name: google-java-format
   url: "https://github.com/google/google-java-format"
   description: Google Style Reformat
   categories:
     - java
-  proprietary: false
   type: tool
 - name: goreporter
   url: "https://github.com/wgliang/goreporter"
   description: concurrently runs many linters and normalises their output to a report.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: goroutine-inspect
   url: "https://github.com/linuxerwang/goroutine-inspect"
   description: An interactive tool to analyze Golang goroutine dump.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: gosimple
   url: "https://github.com/dominikh/go-tools/tree/master/cmd/gosimple"
   description: Report simplifications in code.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: gotype
   url: "https://golang.org/x/tools/cmd/gotype"
   description: Syntactic and semantic analysis similar to the Go compiler.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: GraphMyCSS.com
   url: "https://graphmycss.com"
   description: CSS Specificity Graph Generator
   categories:
     - css
-  proprietary: false
   type: tool
 - name: GrumPHP
   url: "https://github.com/phpro/grumphp"
   description: checks code on every commit
   categories:
     - php
-  proprietary: false
   type: tool
 - name: haml-lint
   url: "https://github.com/brigade/haml-lint"
   description: Tool for writing clean and consistent HAML
   categories:
     - template-languages
-  proprietary: false
   type: tool
 - name: Haskell Dockerfile Linter
   url: "https://github.com/lukasmartinelli/hadolint"
   description: A smarter Dockerfile linter that helpsyou build best practice Docker images
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: Haxe Checkstyle
   url: "https://github.com/HaxeCheckstyle/haxe-checkstyle"
   description: A static analysis tool to help developers write Haxe code that adheres to a coding standard.
   categories:
     - haxe
-  proprietary: false
   type: tool
 - name: Helix QAC
   url: "https://www.perforce.com/products/helix-qac"
@@ -977,98 +850,84 @@
   description: Adds warnings or errors to your crate when using a numerically unstable floating point expression.
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: HLint
   url: "https://github.com/ndmitchell/hlint"
   description: HLint is a tool for suggesting possible improvements to Haskell code.
   categories:
     - haskell
-  proprietary: false
   type: tool
 - name: Hopper
   url: "https://github.com/cuplv/hopper"
   description: A static analysis tool written in scala for languages that run on JVM
   categories:
     - java
-  proprietary: false
   type: tool
 - name: HTML Inspector
   url: "https://github.com/philipwalton/html-inspector"
   description: HTML Inspector is a code quality tool to help you and your team write better markup.
   categories:
     - html
-  proprietary: false
   type: tool
 - name: HTML Tidy
   url: "http://www.html-tidy.org/"
   description: Corrects and cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards.
   categories:
     - html
-  proprietary: false
   type: tool
 - name: HTMLHint
   url: "https://github.com/yaniswang/HTMLHint"
   description: A Static Code Analysis Tool for HTML
   categories:
     - html
-  proprietary: false
   type: tool
 - name: HuntBugs
   url: "https://github.com/amaembo/huntbugs"
   description: Bytecode static analyzer tool based on Procyon Compiler Tools aimed to supersede FindBugs.
   categories:
     - java
-  proprietary: false
   type: tool
 - name: i-Code CNES for Fortran
   url: "https://github.com/lequal/i-CodeCNES"
   description: "An open source static code analysis tool for Fortran 77, Fortran 90 and Shell."
   categories:
     - fortran
-  proprietary: false
   type: tool
 - name: i-Code CNES for Shell
   url: "https://github.com/lequal/i-CodeCNES"
   description: An open source static code analysis tool for Shell and Fortran (77 and 90).
   categories:
     - shell
-  proprietary: false
   type: tool
 - name: IKOS
   url: "https://github.com/nasa-sw-vnv/ikos"
   description: a sound static analyzer for C/C++ code based on LLVM
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: include-gardener
   url: "https://github.com/feddischson/include_gardener"
   description: "a static analyzer for C/C++/Obj-C to create a graph (in dot or graphml format) which shows all `#include` relations of a given set of files."
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: ineffassign
   url: "https://github.com/gordonklaus/ineffassign"
   description: Detect ineffectual assignments in Go code
   categories:
     - go
-  proprietary: false
   type: tool
 - name: interfacer
   url: "https://github.com/mvdan/interfacer"
   description: Suggest narrower interfaces that can be used.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Jakstab
   url: "https://github.com/jkinder/jakstab"
   description: "Jakstab is an Abstract Interpretation-based, integrated disassembly and static analysis framework for designing analyses on executables and recovering reliable control flow graphs."
   categories:
     - binaries
-  proprietary: false
   type: tool
 - name: JArchitect
   url: "https://www.jarchitect.com"
@@ -1082,35 +941,30 @@
   description: "bounded model-checker for Java (bytecode), verifies user-defined assertions, standard assertions, several coverage metric analyses"
   categories:
     - java
-  proprietary: false
   type: tool
 - name: jedi
   url: "https://github.com/davidhalter/jedi"
   description: autocompletion/static analysis library for Python
   categories:
     - python
-  proprietary: false
   type: tool
 - name: jshint
   url: "https://github.com/jshint/jshint"
   description: "detect errors and potential problems in JavaScript code and enforce your team's coding conventions"
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: JSLint
   url: "https://github.com/douglascrockford/JSLint"
   description: The JavaScript Code Quality Tool
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: JSPrime
   url: "https://github.com/dpnishant/jsprime"
   description: static security analysis tool
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: kiuwan
   url: "https://www.kiuwan.com/"
@@ -1124,21 +978,18 @@
   description: An anti-bikeshedding Kotlin linter with built-in formatter
   categories:
     - kotlin
-  proprietary: false
   type: tool
 - name: kube-score
   url: "https://github.com/zegl/kube-score"
   description: Static code analysis of your Kubernetes object definitions.
   categories:
     - containers
-  proprietary: false
   type: tool
 - name: lacheck
   url: "https://www.ctan.org/pkg/lacheck"
   description: A tool for finding common mistakes in LaTeX documents.
   categories:
     - latex
-  proprietary: false
   type: tool
 - name: Landscape
   url: "https://landscape.io/"
@@ -1152,14 +1003,12 @@
   description: Style and grammar checker for 25+ languages. It finds many errors that a simple spell checker cannot detect.
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: laser
   url: "https://github.com/michaeledgar/laser"
   description: Static analysis and style linter for Ruby code.
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: Layered Insight
   url: "https://layeredinsight.com/"
@@ -1180,119 +1029,102 @@
   description: A Java library that allows existing tools to analyse the evolution of software systems by providing a common API for different version control systems and issue trackers.
   categories:
     - supporting tools
-  proprietary: false
   type: tool
 - name: linter
   url: "https://github.com/HairyFotr/linter"
   description: "Linter is a Scala static analysis compiler plugin which adds compile-time checks for various possible bugs, inefficiencies, and style problems."
   categories:
     - scala
-  proprietary: false
   type: tool
 - name: linter-rust
   url: "https://github.com/AtomLinter/linter-rust"
   description: "Linting your Rust-files in Atom, using rustc and cargo"
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: lintian
   url: "https://github.com/Debian/lintian"
   description: Static analysis tool for Debian packages
   categories:
     - packages
-  proprietary: false
   type: tool
 - name: lintr
   url: "https://github.com/jimhester/lintr"
   description: Static Code Analysis for R.
   categories:
     - r
-  proprietary: false
   type: tool
 - name: linty fresh
   url: "https://github.com/lyft/linty_fresh"
   description: parse lint errors and report them to Github as comments on a pull request
   categories:
     - python
-  proprietary: false
   type: tool
 - name: lll
   url: "https://github.com/walle/lll"
   description: Report long lines.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: luacheck
   url: "https://github.com/mpeterv/luacheck"
   description: A tool for linting and static analysis of Lua code.
   categories:
     - lua
-  proprietary: false
   type: tool
 - name: maligned
   url: "https://github.com/mdempsky/maligned"
   description: " Detect structs that would take less memory if their fields were sorted."
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Manalyze
   url: "https://github.com/JusticeRage/Manalyze"
   description: "A static analyzer, which checks portable executables for malicious content."
   categories:
     - binaries
-  proprietary: false
   type: tool
 - name: markdownlint
   url: "https://github.com/DavidAnson/markdownlint"
   description: Node.js -based style checker and lint tool for Markdown/CommonMark files.
   categories:
     - markdown
-  proprietary: false
   type: tool
 - name: mccabe
   url: "https://github.com/PyCQA/mccabe"
   description: check McCabe complexity
   categories:
     - python
-  proprietary: false
   type: tool
 - name: mdl
   url: "https://github.com/mivok/markdownlint"
   description: A tool to check Markdown files and flag style issues.
   categories:
     - markdown
-  proprietary: false
   type: tool
 - name: megacheck
   url: "https://github.com/dominikh/go-tools/tree/master/cmd/megacheck"
   description: "Run staticcheck, gosimple and unused, sharing work."
   categories:
     - go
-  proprietary: false
   type: tool
 - name: misspell
   url: "https://github.com/client9/misspell"
   description: Finds commonly misspelled English words.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: misspell-fixer
   url: "https://github.com/vlajos/misspell-fixer"
   description: "Quick tool for fixing common misspellings, typos in source code"
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: Misspelled Words In Context
   url: "https://github.com/jwilk/mwic"
   description: a spell-checker that groups possible misspellings and shows them in their contexts
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: mlint
   url: "https://de.mathworks.com/help/matlab/ref/mlint.html"
@@ -1306,28 +1138,24 @@
   description: a set of static analysis and refactoring tools which use graph theory
   categories:
     - php
-  proprietary: false
   type: tool
 - name: multilint
   url: "https://github.com/adamchainz/multilint"
   description: "a wrapper around `flake8`, `isort` and `modernize`"
   categories:
     - python wrappers
-  proprietary: false
   type: tool
 - name: mypy
   url: "https://github.com/python/mypy"
   description: "a static type checker that aims to combine the benefits of duck typing and static typing, frequently used with [MonkeyType](https://github.com/Instagram/MonkeyType)"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: nakedret
   url: "https://github.com/alexkohler/nakedret"
   description: Finds naked returns.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: NDepend
   url: "http://www.ndepend.com/"
@@ -1348,273 +1176,234 @@
   description: NodeJsScan is a static security code scanner for Node.js applications.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: NullAway
   url: "https://github.com/uber/NullAway"
   description: "Type-based null-pointer checker with low build-time overhead; an [Error Prone](http://errorprone.info/) plugin"
   categories:
     - java
-  proprietary: false
   type: tool
 - name: oclint
   url: "http://oclint.org/"
   description: static analysis of C/C++ code
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: OWASP Dependency Check
   url: "https://www.owasp.org/index.php/OWASP_Dependency_Check"
   description: "Checks dependencies for known, publicly disclosed, vulnerabilities."
   categories:
     - java
-  proprietary: false
   type: tool
 - name: paprika
   url: "https://github.com/GeoffreyHecht/paprika"
   description: A toolkit to detect some code smells in analyzed Android applications.
   categories:
     - mobile
-  proprietary: false
   type: tool
 - name: parallel-lint
   url: "https://github.com/JakubOnderka/PHP-Parallel-Lint"
   description: This tool checks syntax of PHP files faster than serial check with a fancier output.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: Parker
   url: "https://github.com/katiefenn/parker"
   description: Stylesheet analysis tool
   categories:
     - css
-  proprietary: false
   type: tool
 - name: Parse
   url: "https://github.com/psecio/parse"
   description: A Static Security Scanner
   categories:
     - php
-  proprietary: false
   type: tool
 - name: pdepend
   url: "https://pdepend.org/"
   description: Calculates software metrics like cyclomatic complexity for PHP code.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: pelusa
   url: "https://github.com/codegram/pelusa"
   description: Static analysis Lint-type tool to improve your OO Ruby code
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: "Perl::Critic"
   url: "http://search.cpan.org/~thaljef/Perl-Critic-1.126/lib/Perl/Critic.pm"
   description: Critique Perl source code for best-practices.
   categories:
     - perl
-  proprietary: false
   type: tool
 - name: phan
   url: "https://github.com/etsy/phan"
   description: a modern static analyzer from etsy
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP Assumptions
   url: "https://github.com/rskuipers/php-assumptions"
   description: Checks for weak assumptions
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP Coding Standards Fixer
   url: "http://cs.sensiolabs.org/"
   description: "Fixes your code according to standards like PSR-1, PSR-2, and the Symfony standard."
   categories:
     - php
-  proprietary: false
   type: tool
 - name: Php Inspections (EA Extended)
   url: "https://github.com/kalessil/phpinspectionsea"
   description: A Static Code Analyzer for PHP.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP Refactoring Browser
   url: "https://github.com/QafooLabs/php-refactoring-browser"
   description: Refactoring helper
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP Semantic Versioning Checker
   url: "https://github.com/tomzx/php-semver-checker"
   description: Suggests a next version according to semantic versioning
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP-Parser
   url: "https://github.com/nikic/PHP-Parser"
   description: A PHP parser written in PHP
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP-Token-Reflection
   url: "https://github.com/Andrewsville/PHP-Token-Reflection"
   description: Library emulating the PHP internal reflection
   categories:
     - php
-  proprietary: false
   type: tool
 - name: php7cc
   url: "https://github.com/sstalle/php7cc"
   description: PHP 7 Compatibility Checker
   categories:
     - php
-  proprietary: false
   type: tool
 - name: php7mar
   url: "https://github.com/Alexia/php7mar"
   description: assist developers in porting their code quickly to PHP 7
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHP_CodeSniffer
   url: "https://github.com/squizlabs/PHP_CodeSniffer"
   description: detects violations of a defined set of coding standards
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpca
   url: "https://github.com/wapmorgan/PhpCodeAnalyzer"
   description: Finds usage of non-built-in extensions
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpcf
   url: "http://wapmorgan.github.io/PhpCodeFixer/"
   description: Finds usage of deprecated PHP features
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpcpd
   url: "https://github.com/sebastianbergmann/phpcpd"
   description: Copy/Paste Detector for PHP code.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpdcd
   url: "https://github.com/sebastianbergmann/phpdcd"
   description: Dead Code Detector (DCD) for PHP code.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PhpDependencyAnalysis
   url: "https://github.com/mamuz/PhpDependencyAnalysis"
   description: builds a dependency graph for a project
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpdoc-to-typehint
   url: "https://github.com/dunglas/phpdoc-to-typehint"
   description: Add scalar type hints and return types to existing PHP projects using PHPDoc annotations
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpDocumentor
   url: "https://www.phpdoc.org/"
   description: Analyzes PHP source code to generate documentation
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHPMD
   url: "https://phpmd.org/"
   description: finds possible bugs in your code
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PhpMetrics
   url: "http://www.phpmetrics.org/"
   description: Calculates and visualizes various code quality metrics
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpmnd
   url: "https://github.com/povils/phpmnd"
   description: Helps to detect magic numbers
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHPQA
   url: "https://github.com/EdgedesignCZ/phpqa"
   description: "A tool for running QA tools (phploc, phpcpd, phpcs, pdepend, phpmd, phpmetrics)"
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpqa - jakzal
   url: "https://github.com/jakzal/phpqa"
   description: Many tools for PHP static analysis in one container
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpqa - jmolivas
   url: "https://github.com/jmolivas/phpqa"
   description: PHPQA all-in-one Analyzer CLI tool
   categories:
     - php
-  proprietary: false
   type: tool
 - name: phpsa
   url: "https://github.com/ovr/phpsa"
   description: Static analysis tool for PHP.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PHPStan
   url: "https://github.com/phpstan/phpstan"
   description: PHP Static Analysis Tool - discover bugs in your code without running it!
   categories:
     - php
-  proprietary: false
   type: tool
 - name: plato
   url: "https://github.com/es-analysis/plato"
   description: Visualize JavaScript source complexity
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: Polymer-analyzer
   url: "https://github.com/Polymer/polymer-analyzer"
   description: A static analysis framework for Web Components.
   categories:
     - html
-  proprietary: false
   type: tool
 - name: Polyspace Bug Finder
   url: "https://www.mathworks.com/products/polyspace-bug-finder.html"
@@ -1642,56 +1431,48 @@
   description: A verifier for FreeBSD and DragonFlyBSD port directories.
   categories:
     - makefiles
-  proprietary: false
   type: tool
 - name: prealloc
   url: "https://github.com/alexkohler/prealloc"
   description: Finds slice declarations that could potentially be preallocated.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Prettier
   url: "https://github.com/prettier/prettier"
   description: An opinionated code formatter.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: Progpilot
   url: "https://github.com/designsecurity/progpilot"
   description: A static analysis tool for security purposes
   categories:
     - php
-  proprietary: false
   type: tool
 - name: Project Wallace CSS Analyzer
   url: "https://github.com/projectwallace/css-analyzer"
   description: "Analytics for CSS, part of [Project Wallace](https://www.projectwallace.com)"
   categories:
     - css
-  proprietary: false
   type: tool
 - name: proselint
   url: "https://github.com/amperser/proselint/"
   description: a linter for English prose with a focus on writing style instead of grammar.
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: prospector
   url: "https://github.com/PyCQA/prospector"
   description: "a wrapper around `pylint`, `pep8`, `mccabe` and others"
   categories:
     - python wrappers
-  proprietary: false
   type: tool
 - name: Psalm
   url: "https://getpsalm.org/"
   description: Static analysis tool for finding type errors in PHP applications
   categories:
     - php
-  proprietary: false
   type: tool
 - name: PullRequest
   url: "https://www.pullrequest.com"
@@ -1705,154 +1486,132 @@
   description: "Puma Scan provides real time secure code analysis for common vulnerabilities (XSS, SQLi, CSRF, LDAPi, crypto, deserialization, etc.) as development teams write code in Visual Studio."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: Puma Scan
   url: "https://github.com/pumasecurity/puma-scan"
   description: "Puma Scan provides real time secure code analysis for common vulnerabilities (XSS, SQLi, CSRF, LDAPi, crypto, deserialization, etc.) as development teams write code in Visual Studio."
   categories:
     - ide plugins
-  proprietary: false
   type: tool
 - name: Puppet Lint
   url: "https://github.com/rodjek/puppet-lint"
   description: Check that your Puppet manifests conform to the style guide.
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: py-find-injection
   url: "https://github.com/uber/py-find-injection"
   description: find SQL injection vulnerabilities in Python code
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pycodestyle
   url: "https://github.com/PyCQA/pycodestyle"
   description: "(formerly `pep8`) check Python code against some of the style conventions in PEP 8"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pydocstyle
   url: "https://github.com/PyCQA/pydocstyle"
   description: check compliance with Python docstring conventions
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pyflakes
   url: "https://github.com/pyflakes/pyflakes/"
   description: check Python source files for errors
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pylint
   url: "https://github.com/PyCQA/pylint"
   description: "looks for programming errors, helps enforcing a coding standard and sniffs for some code smells. It additionally includes `pyreverse` (an UML diagram generator) and `symilar` (a similarities checker)."
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pyre-check
   url: "https://github.com/facebook/pyre-check"
   description: "A fast, scalable type checker for large Python codebases"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pyright
   url: "https://github.com/Microsoft/pyright"
   description: "Static type checker for Python, created to address gaps in existing tools like mypy."
   categories:
     - python
-  proprietary: false
   type: tool
 - name: pyroma
   url: "https://github.com/regebro/pyroma"
   description: "rate how well a Python project complies with the best practices of the Python packaging ecosystem, and list issues that could be improved"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: PyT - Python Taint
   url: "https://github.com/python-security/pyt"
   description: A static analysis tool for detecting security vulnerabilities in Python web applications.
   categories:
     - python
-  proprietary: false
   type: tool
 - name: Qafoo Quality Analyzer
   url: "https://github.com/Qafoo/QualityAnalyzer"
   description: Visualizes metrics and source code
   categories:
     - php
-  proprietary: false
   type: tool
 - name: qark
   url: "https://github.com/linkedin/qark"
   description: Tool to look for several security related Android application vulnerabilities
   categories:
     - mobile
-  proprietary: false
   type: tool
 - name: quality
   url: "https://github.com/jden/quality"
   description: zero configuration code and module linting
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: quality
   url: "https://github.com/apiology/quality"
   description: "Runs quality checks on your code using community tools, and makes sure your numbers don't get any worse over time."
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: QuantifiedCode
   url: "https://www.quantifiedcode.com/"
   description: Automated code review & repair
   categories:
     - web services
-  proprietary: false
   type: service
 - name: Querly
   url: "https://github.com/soutaro/querly"
   description: Pattern Based Checking Tool for Ruby
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: qulice
   url: "https://www.qulice.com/"
   description: "combines a few (pre-configured) static analysis tools (checkstyle, PMD, Findbugs, ...)."
   categories:
     - java
-  proprietary: false
   type: tool
 - name: radon
   url: "https://github.com/rubik/radon"
   description: a Python tool that computes various metrics from the source code
   categories:
     - python
-  proprietary: false
   type: tool
 - name: reek
   url: "https://github.com/troessner/reek"
   description: Code smell detector for Ruby
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: Refactoring Essentials
   url: "http://vsrefactoringessentials.com/"
   description: "The free Visual Studio 2015 extension for C# and VB.NET refactorings, including code best practice analyzers."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: ReSharper
   url: "https://www.jetbrains.com/resharper/"
@@ -1873,14 +1632,12 @@
   description: Scanner detecting the use of JavaScript libraries with known vulnerabilities
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: revive
   url: "https://github.com/mgechev/revive"
   description: "Fast, configurable, extensible, flexible, and beautiful linter for Go. Drop-in replacement of golint."
   categories:
     - go
-  proprietary: false
   type: tool
 - name: RIPS
   url: "https://www.ripstech.com/"
@@ -1894,105 +1651,90 @@
   description: "Project that focuses on the identification of potential vulnerabilities such as SQL injection, cross-site scripting (XSS), CSRF, cryptography weaknesses, hardcoded passwords and many more."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: Roslynator
   url: "https://github.com/JosefPihrt/Roslynator/"
   description: "A collection of 190+ analyzers and 190+ refactorings for C#, powered by Roslyn."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: rpmlint
   url: "https://github.com/rpm-software-management/rpmlint"
   description: Tool for checking common errors in rpm packages
   categories:
     - packages
-  proprietary: false
   type: tool
 - name: RuboCop
   url: "https://github.com/rubocop-hq/rubocop"
   description: "A Ruby static code analyzer, based on the community Ruby style guide."
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: Rubrowser
   url: "https://github.com/blazeeboy/rubrowser"
   description: Ruby classes interactive dependency graph generator.
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: ruby-lint
   url: "https://github.com/YorickPeterse/ruby-lint"
   description: Static code analysis for Ruby
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: rubycritic
   url: "https://github.com/whitesmith/rubycritic"
   description: A Ruby code quality reporter
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: Rust Language Server
   url: "https://github.com/rust-lang-nursery/rls"
   description: "Supports functionality such as 'goto definition', symbol search, reformatting, and code completion, and enables renaming and refactorings."
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: rustfix
   url: "https://github.com/killercup/rustfix"
   description: "read and apply the suggestions made by rustc (and third-party lints, like those offered by clippy)."
   categories:
     - rust
-  proprietary: false
   type: tool
 - name: safesql
   url: "https://github.com/stripe/safesql"
   description: Static analysis tool for Golang that protects against SQL injections.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: SandiMeter
   url: "https://github.com/makaroni4/sandi_meter"
   description: "Static analysis tool for checking Ruby code for Sandi Metz' rules."
   categories:
     - ruby
-  proprietary: false
   type: tool
 - name: sass-lint
   url: "https://github.com/sasstools/sass-lint"
   description: A Node-only Sass linter for both sass and scss syntax.
   categories:
     - css
-  proprietary: false
   type: tool
 - name: Scalastyle
   url: "http://www.scalastyle.org"
   description: Scalastyle examines your Scala code and indicates potential problems with it.
   categories:
     - scala
-  proprietary: false
   type: tool
 - name: scan-build
   url: "https://clang-analyzer.llvm.org/scan-build.html"
   description: Analyzes C/C++ code using LLVM at compile-time
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: scapegoat
   url: "https://github.com/sksamuel/scapegoat"
   description: Scala compiler plugin for static code analysis
   categories:
     - scala
-  proprietary: false
   type: tool
 - name: Scrutinizer
   url: "https://scrutinizer-ci.com/"
@@ -2006,21 +1748,18 @@
   description: Linter for SCSS files
   categories:
     - css
-  proprietary: false
   type: tool
 - name: Security Code Scan
   url: "https://security-code-scan.github.io/"
   description: "Security code analyzer for C# and VB.NET. Detects various security vulnerability patterns: SQLi, XSS, CSRF, XXE, Open Redirect, etc."
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: Security Code Scan
   url: "https://security-code-scan.github.io/"
   description: "Security code analyzer for C# and VB.NET that integrates into Visual Studio 2015 and newer. Detects various security vulnerability patterns: SQLi, XSS, CSRF, XXE, Open Redirect, etc."
   categories:
     - ide plugins
-  proprietary: false
   type: tool
 - name: SensioLabs Insight
   url: "https://insight.sensiolabs.com/"
@@ -2034,7 +1773,6 @@
   description: "ShellCheck, a static analysis tool that gives warnings and suggestions for bash/sh shell scripts"
   categories:
     - shell
-  proprietary: false
   type: tool
 - name: Sider
   url: "https://sider.review"
@@ -2048,14 +1786,12 @@
   description: Configurable tool for analyzing Slim templates
   categories:
     - template-languages
-  proprietary: false
   type: tool
 - name: slither
   url: "https://github.com/trailofbits/slither"
   description: "Static analysis framework that runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses"
   categories:
     - solidity
-  proprietary: false
   type: tool
 - name: Snyk
   url: "https://snyk.io/"
@@ -2069,14 +1805,12 @@
   description: Security-focused static analysis for the Phoenix Framework
   categories:
     - elixir
-  proprietary: false
   type: tool
 - name: solium
   url: "https://github.com/duaraghav8/Solium"
   description: Solium is a linter to identify and fix style and security issues in Solidity smart contracts
   categories:
     - solidity
-  proprietary: false
   type: tool
 - name: SonarCloud
   url: "https://sonarcloud.io"
@@ -2090,14 +1824,12 @@
   description: SonarLint is an extension for Visual Studio 2015 and 2017 that provides on-the-fly feedback to developers on new bugs and quality issues injected into .NET code.
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: Soot
   url: "https://sable.github.io/soot/"
   description: A framework for analyzing and transforming Java and Android applications.
   categories:
     - java
-  proprietary: false
   type: tool
 - name: SourceMeter
   url: "https://www.sourcemeter.com/resources/rpg/"
@@ -2118,91 +1850,78 @@
   description: CSS Specificity Graph Generator
   categories:
     - css
-  proprietary: false
   type: tool
 - name: splint
   url: "https://github.com/ravenexp/splint"
   description: Annotation-assisted static program checker
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: Spoon
   url: "https://github.com/INRIA/spoon"
   description: Library to write your own static analyses and architectural rule checkers for Java. Can be integrated in Maven and Gradle.
   categories:
     - java
-  proprietary: false
   type: tool
 - name: SpotBugs
   url: "https://spotbugs.github.io/"
   description: "SpotBugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code."
   categories:
     - java
-  proprietary: false
   type: tool
 - name: sqlcheck
   url: "https://github.com/jarulraj/sqlcheck"
   description: Automatically identify anti-patterns in SQL queries
   categories:
     - sql
-  proprietary: false
   type: tool
 - name: sqlint
   url: "https://github.com/purcell/sqlint"
   description: Simple SQL linter
   categories:
     - sql
-  proprietary: false
   type: tool
 - name: standard
   url: "http://standardjs.com/"
   description: An npm module that checks for Javascript Styleguide issues
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: structcheck
   url: "https://github.com/opennota/check"
   description: Find unused struct fields.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Stylelint
   url: "http://stylelint.io/"
   description: Linter for SCSS/CSS files
   categories:
     - css
-  proprietary: false
   type: tool
 - name: styler
   url: "https://styler.r-lib.org/"
   description: Formatting of R source code files and pretty-printing of R code.
   categories:
     - r
-  proprietary: false
   type: tool
 - name: SwiftFormat
   url: "https://github.com/nicklockwood/SwiftFormat"
   description: A library and command-line formatting tool for reformatting Swift code
   categories:
     - swift
-  proprietary: false
   type: tool
 - name: SwiftLint
   url: "https://github.com/realm/SwiftLint"
   description: A tool to enforce Swift style and conventions
   categories:
     - swift
-  proprietary: false
   type: tool
 - name: Tailor
   url: "https://github.com/sleekbyte/tailor"
   description: "A static analysis and lint tool for source code written in Apple's Swift programming language."
   categories:
     - swift
-  proprietary: false
   type: tool
 - name: Teamscale
   url: "http://www.teamscale.com/"
@@ -2216,21 +1935,18 @@
   description: "A JavaScript code analyzer for deep, cross-editor language support"
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: terrascan
   url: "https://github.com/cesar-rodriguez/terrascan"
   description: Collection of security and best practice tests for static code analysis of Terraform templates.
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: test
   url: "http://golang.org/pkg/testing/"
   description: Show location of test failures from the stdlib testing module.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Test Design Studio
   url: "http://patterson-consulting.net/tds"
@@ -2244,77 +1960,66 @@
   description: Show location of failed testify assertions.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: tflint
   url: "https://github.com/wata727/tflint"
   description: "A Terraform linter for detecting errors that can not be detected by `terraform plan`."
   categories:
     - configuration management
-  proprietary: false
   type: tool
 - name: TSLint
   url: "https://github.com/palantir/tslint"
   description: An extensible linter for the TypeScript language.
   categories:
     - typescript
-  proprietary: false
   type: tool
 - name: tslint-clean-code
   url: "https://github.com/Glavin001/tslint-clean-code"
   description: A set of TSLint rules inspired by the Clean Code handbook.
   categories:
     - typescript
-  proprietary: false
   type: tool
 - name: tslint-microsoft-contrib
   url: "https://github.com/Microsoft/tslint-microsoft-contrib"
   description: A set of tslint rules for static code analysis of TypeScript projects maintained by Microsoft.
   categories:
     - typescript
-  proprietary: false
   type: tool
 - name: tsqllint
   url: "https://github.com/tsqllint/tsqllint"
   description: T-SQL-specific linter
   categories:
     - sql
-  proprietary: false
   type: tool
 - name: TSqlRules
   url: "https://github.com/ashleyglee/TSqlRules"
   description: TSQL Static Code Analysis Rules for SQL Server
   categories:
     - sql
-  proprietary: false
   type: tool
 - name: Tuli
   url: "https://github.com/ircmaxell/Tuli"
   description: A static analysis engine
   categories:
     - php
-  proprietary: false
   type: tool
 - name: twig-lint
   url: "https://github.com/asm89/twig-lint"
   description: twig-lint is a lint tool for your twig files.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: Twiggy
   url: "https://github.com/rustwasm/twiggy"
   description: "Analyzes a binary's call graph to profile code size. The goal is to slim down binaries."
   categories:
     - binaries
-  proprietary: false
   type: tool
 - name: unconvert
   url: "https://github.com/mdempsky/unconvert"
   description: Detect redundant type conversions.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Understand
   url: "https://scitools.com/ada-programming-essential/"
@@ -2328,21 +2033,18 @@
   description: Finds unnecessary import aliases
   categories:
     - go
-  proprietary: false
   type: tool
 - name: unparam
   url: "https://github.com/mvdan/unparam"
   description: Find unused function parameters.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: unused
   url: "https://github.com/dominikh/go-tools/tree/master/cmd/unused"
   description: Find unused variables.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: Upsource
   url: "https://www.jetbrains.com/upsource/"
@@ -2356,117 +2058,100 @@
   description: "A customizable, syntax-aware linter for prose."
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: varcheck
   url: "https://github.com/opennota/check"
   description: Find unused global variables and constants.
   categories:
     - go
-  proprietary: false
   type: tool
 - name: vera++
   url: "https://bitbucket.org/verateam/vera/wiki/Introduction"
   description: "Vera++ is a programmable tool for verification, analysis and transformation of C++ source code."
   categories:
     - c/c++
-  proprietary: false
   type: tool
 - name: vint
   url: "https://github.com/Kuniwak/vint"
   description: Fast and Highly Extensible Vim script Language Lint implemented by Python.
   categories:
     - ide plugins
-  proprietary: false
   type: tool
 - name: Violations Lib
   url: "https://github.com/tomasbjerre/violations-lib"
   description: "Java library for parsing report files from static code analysis. Used by a bunch of Jenkins, Maven and Gradle plugins."
   categories:
     - supporting tools
-  proprietary: false
   type: tool
 - name: VSDiagnostics
   url: "https://github.com/Vannevelj/VSDiagnostics"
   description: A collection of static analyzers based on Roslyn that integrates with VS.
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: vulture
   url: "https://github.com/jendrikseipp/vulture"
   description: "find unused classes, functions and variables in Python code"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: WAP
   url: "https://www.owasp.org/index.php/OWASP_WAP-Web_Application_Protection"
   description: Tool to detect and correct input validation vulnerabilities in PHP (4.0 or higher) web applications and predicts false positives by combining static analysis and data mining.
   categories:
     - php
-  proprietary: false
   type: tool
 - name: WartRemover
   url: "https://github.com/puffnfresh/wartremover"
   description: a flexible Scala code linting tool.
   categories:
     - scala
-  proprietary: false
   type: tool
 - name: Weeder
   url: "https://github.com/ndmitchell/weeder"
   description: A tool for detecting dead exports or package imports in Haskell code.
   categories:
     - haskell
-  proprietary: false
   type: tool
 - name: wemake-python-styleguide
   url: "https://github.com/wemake-services/wemake-python-styleguide"
   description: the strictest and most opinionated python linter ever
   categories:
     - python
-  proprietary: false
   type: tool
 - name: Wintellect.Analyzers
   url: "https://github.com/Wintellect/Wintellect.Analyzers"
-  description: ".NET Compiler Platform (\"Roslyn\") diagnostic analyzers and code fixes."
+  description: '.NET Compiler Platform ("Roslyn") diagnostic analyzers and code fixes.'
   categories:
     - "c#"
-  proprietary: false
   type: tool
 - name: write-good
   url: "https://github.com/btford/write-good"
-  description: "A linter with a focus on eliminating \"weasel words\"."
+  description: 'A linter with a focus on eliminating "weasel words".'
   categories:
     - writing
-  proprietary: false
   type: tool
 - name: xenon
   url: "https://github.com/rubik/xenon"
   description: "monitor code complexity using [`radon`](https://github.com/rubik/radon)"
   categories:
     - python
-  proprietary: false
   type: tool
 - name: xo
   url: "https://github.com/xojs/xo"
   description: Opinionated but configurable ESLint wrapper with lots of goodies included. Enforces strict and readable code.
   categories:
     - javascript
-  proprietary: false
   type: tool
 - name: yamllint
   url: "https://github.com/adrienverge/yamllint"
   description: "Checks YAML files for syntax validity, key repetition and cosmetic problems such as lines length, trailing spaces, and indentation."
   categories:
     - template-languages
-  proprietary: false
   type: tool
 - name: yardstick
   url: "https://github.com/calmh/yardstick"
   description: Javascript code metrics
   categories:
     - javascript
-  proprietary: false
   type: tool
