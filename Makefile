@@ -17,6 +17,6 @@ serve: link
 deploy: link
 	mkdocs gh-deploy
 
-.PHONY: lint
-lint:
-	cd data/lint && cargo run -- ../../data/data.yml
+.PHONY: render
+render:
+	cd data/render && cargo run -- ../../data/data.yml
