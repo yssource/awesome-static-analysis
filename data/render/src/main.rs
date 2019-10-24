@@ -6,8 +6,10 @@ use std::error::Error;
 use std::process;
 
 mod lints;
+mod render;
 mod tool;
 
+use render::render;
 use tool::Tool;
 
 fn is_sorted<T>(data: &[T]) -> bool
@@ -37,11 +39,13 @@ fn main() -> Result<(), Box<dyn Error>> {
         process::exit(2);
     };
 
-    for tool in tools {
+    for tool in &tools {
         if !valid(&tool) {
             println!("Error with entry: {}", tool.name);
             process::exit(3);
         }
     }
-    Ok(())
+
+    let template = std::fs::read_to_string("src/templates/README.md")?;
+    render(&template, tools)
 }
