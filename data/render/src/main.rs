@@ -3,7 +3,6 @@ extern crate serde_derive;
 
 use std::env;
 use std::error::Error;
-use std::process;
 
 mod lints;
 mod render;
@@ -24,27 +23,36 @@ fn valid(tool: &Tool) -> bool {
     lints.iter().all(|lint| lint(&tool))
 }
 
-fn main() -> Result<(), Box<dyn Error>> {
+fn get_file() -> Result<String, Box<dyn Error>> {
     let files: Vec<_> = env::args().skip(1).collect();
     if files.len() != 1 {
-        println!("Expected a single input file");
-        process::exit(1);
+        return Err("Expected a single input file".into());
     }
+    Ok(files[0].clone())
+}
 
-    let f = std::fs::File::open(&files[0])?;
-    let entries: Vec<Tool> = serde_yaml::from_reader(f)?;
+fn read(file: String) -> Result<Vec<Tool>, Box<dyn Error>> {
+    let f = std::fs::File::open(file)?;
+    Ok(serde_yaml::from_reader(f)?)
+}
 
+fn check(entries: &Vec<Tool>) -> Result<(), Box<dyn Error>> {
     if !is_sorted(&entries) {
-        println!("All list entries must be sorted");
-        process::exit(2);
+        return Err("All list entries must be sorted".into());
     };
 
-    for entry in &entries {
+    for entry in entries {
         if !valid(&entry) {
-            println!("Error with entry: {}", entry.name);
-            process::exit(3);
+            return Err(format!("Error with entry: {}", entry.name).into());
         }
     }
+    Ok(())
+}
+
+fn main() -> Result<(), Box<dyn Error>> {
+    let file = get_file()?;
+    let entries = read(file)?;
+    check(&entries)?;
 
     let template = std::fs::read_to_string("src/templates/README.md")?;
     let rendered = render(&template, entries)?;
