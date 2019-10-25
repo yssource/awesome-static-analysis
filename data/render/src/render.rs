@@ -1,9 +1,9 @@
-use crate::types::{Groups, Tool, Type};
+use crate::types::{Entry, Groups, Type};
 use std::collections::BTreeMap;
 use std::error::Error;
 use tera::{Context, Tera};
 
-fn group(entries: Vec<Tool>) -> Groups {
+fn group(entries: Vec<Entry>) -> Groups {
     let collections = entries
         .iter()
         .cloned()
@@ -11,9 +11,9 @@ fn group(entries: Vec<Tool>) -> Groups {
         .collect();
 
     let mut tools_map = BTreeMap::new();
-    let tools: Vec<Tool> = entries
+    let tools: Vec<Entry> = entries
         .into_iter()
-        .filter(|e| e.ttype == Type::Tool)
+        .filter(|e| e.ttype == Type::Entry)
         .collect();
 
     for tool in tools {
@@ -28,7 +28,7 @@ fn group(entries: Vec<Tool>) -> Groups {
     };
 }
 
-pub fn render(template: &str, entries: Vec<Tool>) -> Result<String, Box<dyn Error>> {
+pub fn render(template: &str, entries: Vec<Entry>) -> Result<String, Box<dyn Error>> {
     let mut context = Context::new();
     let groups = group(entries);
     context.insert("groups", &groups);

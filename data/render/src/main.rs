@@ -9,7 +9,7 @@ mod render;
 mod types;
 
 use render::render;
-use types::Tool;
+use types::Entry;
 
 fn is_sorted<T>(data: &[T]) -> bool
 where
@@ -18,9 +18,9 @@ where
     data.windows(2).all(|w| w[0] <= w[1])
 }
 
-fn valid(tool: &Tool) -> bool {
+fn valid(entry: &Entry) -> bool {
     let lints = [lints::filename, lints::description];
-    lints.iter().all(|lint| lint(&tool))
+    lints.iter().all(|lint| lint(&entry))
 }
 
 fn get_file() -> Result<String, Box<dyn Error>> {
@@ -31,12 +31,12 @@ fn get_file() -> Result<String, Box<dyn Error>> {
     Ok(files[0].clone())
 }
 
-fn read(file: String) -> Result<Vec<Tool>, Box<dyn Error>> {
+fn read(file: String) -> Result<Vec<Entry>, Box<dyn Error>> {
     let f = std::fs::File::open(file)?;
     Ok(serde_yaml::from_reader(f)?)
 }
 
-fn check(entries: &Vec<Tool>) -> Result<(), Box<dyn Error>> {
+fn check(entries: &Vec<Entry>) -> Result<(), Box<dyn Error>> {
     if !is_sorted(&entries) {
         return Err("All list entries must be sorted".into());
     };

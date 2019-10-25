@@ -4,13 +4,13 @@ use std::collections::BTreeMap;
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "lowercase")]
 pub enum Type {
-    Tool,
+    Entry,
     Service,
     Collection,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize, Eq)]
-pub struct Tool {
+pub struct Entry {
     pub name: String,
     pub url: String,
     pub description: String,
@@ -21,26 +21,26 @@ pub struct Tool {
     pub ttype: Type,
 }
 
-impl PartialEq for Tool {
-    fn eq(&self, other: &Tool) -> bool {
+impl PartialEq for Entry {
+    fn eq(&self, other: &Entry) -> bool {
         self.name.to_lowercase() == other.name.to_lowercase()
     }
 }
 
-impl PartialOrd for Tool {
-    fn partial_cmp(&self, other: &Tool) -> Option<Ordering> {
+impl PartialOrd for Entry {
+    fn partial_cmp(&self, other: &Entry) -> Option<Ordering> {
         Some(self.cmp(other))
     }
 }
 
-impl Ord for Tool {
-    fn cmp(&self, other: &Tool) -> Ordering {
+impl Ord for Entry {
+    fn cmp(&self, other: &Entry) -> Ordering {
         self.name.to_lowercase().cmp(&other.name.to_lowercase())
     }
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Groups {
-    pub collections: Vec<Tool>,
-    pub tools: BTreeMap<String, Vec<Tool>>,
+    pub collections: Vec<Entry>,
+    pub tools: BTreeMap<String, Vec<Entry>>,
 }

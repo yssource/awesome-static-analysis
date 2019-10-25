@@ -1,9 +1,9 @@
-use crate::types::Tool;
+use crate::types::Entry;
 
-pub fn filename(tool: &Tool) -> bool {
-    tool.name.len() <= 50
+pub fn filename(entry: &Entry) -> bool {
+    entry.name.len() <= 50
 }
 
-pub fn description(tool: &Tool) -> bool {
-    tool.description.len() <= 200
+pub fn description(entry: &Entry) -> bool {
+    entry.description.len() <= 200
 }
