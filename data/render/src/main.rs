@@ -7,10 +7,10 @@ use std::process;
 
 mod lints;
 mod render;
-mod tool;
+mod types;
 
 use render::render;
-use tool::Tool;
+use types::Tool;
 
 fn is_sorted<T>(data: &[T]) -> bool
 where
@@ -32,20 +32,22 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     let f = std::fs::File::open(&files[0])?;
-    let tools: Vec<Tool> = serde_yaml::from_reader(f)?;
+    let entries: Vec<Tool> = serde_yaml::from_reader(f)?;
 
-    if !is_sorted(&tools) {
-        println!("List of tools must be sorted");
+    if !is_sorted(&entries) {
+        println!("All list entries must be sorted");
         process::exit(2);
     };
 
-    for tool in &tools {
-        if !valid(&tool) {
-            println!("Error with entry: {}", tool.name);
+    for entry in &entries {
+        if !valid(&entry) {
+            println!("Error with entry: {}", entry.name);
             process::exit(3);
         }
     }
 
     let template = std::fs::read_to_string("src/templates/README.md")?;
-    render(&template, tools)
+    let rendered = render(&template, entries)?;
+    println!("{}", rendered);
+    Ok(())
 }

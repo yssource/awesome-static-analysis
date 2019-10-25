@@ -1,4 +1,4 @@
-use crate::tool::Tool;
+use crate::types::Tool;
 
 pub fn filename(tool: &Tool) -> bool {
     tool.name.len() <= 50

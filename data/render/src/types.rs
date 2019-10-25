@@ -1,14 +1,15 @@
 use std::cmp::Ordering;
+use std::collections::BTreeMap;
 
-#[derive(Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "lowercase")]
 pub enum Type {
     Tool,
     Service,
-    List,
+    Collection,
 }
 
-#[derive(Debug, Serialize, Deserialize, Eq)]
+#[derive(Clone, Debug, Serialize, Deserialize, Eq)]
 pub struct Tool {
     pub name: String,
     pub url: String,
@@ -36,4 +37,10 @@ impl Ord for Tool {
     fn cmp(&self, other: &Tool) -> Ordering {
         self.name.to_lowercase().cmp(&other.name.to_lowercase())
     }
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Groups {
+    pub collections: Vec<Tool>,
+    pub tools: BTreeMap<String, Vec<Tool>>,
 }
