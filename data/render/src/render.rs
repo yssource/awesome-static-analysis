@@ -10,20 +10,20 @@ fn group(entries: Vec<Entry>) -> Groups {
         .filter(|e| e.ttype == Type::Collection)
         .collect();
 
-    let mut tools_map = BTreeMap::new();
-    let tools: Vec<Entry> = entries
+    let mut linter_map = BTreeMap::new();
+    let linters: Vec<Entry> = entries
         .into_iter()
-        .filter(|e| e.ttype == Type::Entry)
+        .filter(|e| e.ttype == Type::Linter)
         .collect();
 
-    for tool in tools {
-        for category in &tool.categories {
-            let cat_entries = tools_map.entry(category.clone()).or_insert_with(|| vec![]);
-            cat_entries.push(tool.clone());
+    for linter in linters {
+        for category in &linter.categories {
+            let cat_entries = linter_map.entry(category.clone()).or_insert_with(|| vec![]);
+            cat_entries.push(linter.clone());
         }
     }
     return Groups {
-        tools: tools_map,
+        linters: linter_map,
         collections,
     };
 }

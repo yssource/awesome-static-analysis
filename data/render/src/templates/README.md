@@ -1,11 +1,11 @@
- ![Logo](awesome.png)
+![Logo](awesome.png)
 
 > Static program analysis is the analysis of computer software that is performed without actually executing programs — [Wikipedia](https://en.wikipedia.org/wiki/Static_program_analysis)
 
 This is a collection of static analysis tools and code quality checkers. Pull requests are very welcome!
 
-* :copyright: stands for proprietary software. All other tools are Open Source.
-* :warning: indicates that the community does not recommend to use this tool for
+- :copyright: stands for proprietary software. All other tools are Open Source.
+- :warning: indicates that the community does not recommend to use this tool for
   new projects anymore as it is outdated or no longer maintained.
 
 Also check out the sister project, [awesome-dynamic-analysis](https://github.com/mre/awesome-dynamic-analysis).
@@ -62,25 +62,25 @@ Also check out the sister project, [awesome-dynamic-analysis](https://github.com
 
 #### [Other](#other-1)
 
-  - [Build tools](#build-tools)
-  - [Binaries](#binaries)
-  - [Containers](#containers)
-  - [Config Files](#config-files)
-  - [Configuration Management](#configuration-management)
-  - [CSS](#css)
-  - [Gherkin](#gherkin)
-  - [HTML](#html)
-  - [IDE Plugins](#ide-plugins)
-  - [LaTeX](#latex)
-  - [Makefiles](#makefiles)
-  - [Markdown](#markdown)
-  - [Mobile](#mobile)
-  - [Packages](#packages)
-  - [Supporting Tools](#supporting-tools)
-  - [Template Languages](#template-languages)
-  - [Translation](#translation)
-  - [Web services](#web-services)
-  - [Writing](#writing)
+- [Build tools](#build-tools)
+- [Binaries](#binaries)
+- [Containers](#containers)
+- [Config Files](#config-files)
+- [Configuration Management](#configuration-management)
+- [CSS](#css)
+- [Gherkin](#gherkin)
+- [HTML](#html)
+- [IDE Plugins](#ide-plugins)
+- [LaTeX](#latex)
+- [Makefiles](#makefiles)
+- [Markdown](#markdown)
+- [Mobile](#mobile)
+- [Packages](#packages)
+- [Supporting Tools](#supporting-tools)
+- [Template Languages](#template-languages)
+- [Translation](#translation)
+- [Web services](#web-services)
+- [Writing](#writing)
 
 #### [More Collections](#more-collections-1)
 
@@ -88,21 +88,21 @@ Also check out the sister project, [awesome-dynamic-analysis](https://github.com
 
 # Programming Languages
 
-{% for language, tools in groups.tools %}
-    ## {{ language }}
+{% for language, linters in groups.linters %} ## {{ language }}
 
-    {% for tool in tools -%}
-    - [{{ tool.name }}]({{ tool.url | safe }})
-    {%- if tool.proprietary %}:copyright:{% endif %} {% if tool.deprecated %}:warning:{% endif %} - {{ tool.description }}
+    {% for linter in linters -%}
+    - [{{linter.name }}]({{linter.url | safe }})
+    {%- iflinter.proprietary %}:copyright:{% endif %} {% iflinter.deprecated %}:warning:{% endif %} - {{linter.description }}
     {% endfor %}
-{% endfor %}
 
+{% endfor %}
 
 # More collections
 
 {% for collection in groups.collections %}
+
 - [{{ collection.name }}]({{ collection.url | safe }}) - {{ collection.description }}
-{% endfor %}
+  {% endfor %}
 
 # License
 

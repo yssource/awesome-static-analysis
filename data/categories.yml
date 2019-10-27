@@ -1,0 +1,113 @@
+---
+languages:
+  - name: Abap
+    tag: abap
+  - name: Ada
+    tag: ada
+  - name: Awk
+    tag: awk
+  - name: C
+    tag: c
+  - name: C++
+    tag: cpp
+  - name: "C#"
+    tag: csharp
+  - name: Crystal
+    tag: crystal
+  - name: Dlang
+    tag: dlang
+  - name: Elixir
+    tag: elixir
+  - name: Erlang
+    tag: erlang
+  - name: "F#"
+    tag: fsharp
+  - name: Fortran
+    tag: fortran
+  - name: Go
+    tag: go
+  - name: Groovy
+    tag: groovy
+  - name: Haskell
+    tag: haskell
+  - name: Haxe
+    tag: haxe
+  - name: Java
+    tag: java
+  - name: JavaScript
+    tag: javascript
+  - name: Kotlin
+    tag: kotlin
+  - name: Lua
+    tag: lua
+  - name: MATLAB
+    tag: matlab
+  - name: Perl
+    tag: perl
+  - name: PHP
+    tag: php
+  - name: Python
+    tag: python
+  - name: Python wrappers
+    tag: pythonwrapper
+  - name: R
+    tag: r
+  - name: RPG
+    tag: rpg
+  - name: Ruby
+    tag: ruby
+  - name: Rust
+    tag: rust
+  - name: Scala
+    tag: scala
+  - name: Shell
+    tag: shell
+  - name: Solidity
+    tag: solidity
+  - name: SQL
+    tag: sql
+  - name: Swift
+    tag: swift
+  - name: TypeScript
+    tag: typescript
+  - name: VBScript
+    tag: vbscript
+other:
+  - name: Build tools
+    tag: buildtool
+  - name: Binaries
+    tag: binary
+  - name: Containers
+    tag: container
+  - name: Config Files
+    tag: configfile
+  - name: Configuration Management
+    tag: configmanagement
+  - name: CSS
+    tag: css
+  - name: Gherkin
+    tag: gherkin
+  - name: HTML
+    tag: html
+  - name: IDE Plugins
+    tag: ide
+  - name: LaTeX
+    tag: latex
+  - name: Makefiles
+    tag: make
+  - name: Markdown
+    tag: markdown
+  - name: Mobile
+    tag: mobile
+  - name: Packages
+    tag: package
+  - name: Supporting Tools
+    tag: support
+  - name: Template-Languages
+    tag: template
+  - name: Translation
+    tag: translation
+  - name: Writing
+    tag: writing
+  - name: Web services
+    tag: webservice
