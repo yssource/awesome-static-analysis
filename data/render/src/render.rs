@@ -4,15 +4,10 @@ use std::error::Error;
 use tera::{Context, Tera};
 
 fn group(entries: Vec<Entry>) -> Groups {
-    let collections = entries
-        .iter()
-        .cloned()
-        .filter(|e| e.ttype == Type::Collection)
-        .collect();
-
     let mut linter_map = BTreeMap::new();
     let linters: Vec<Entry> = entries
-        .into_iter()
+        .iter()
+        .cloned()
         .filter(|e| e.ttype == Type::Linter)
         .collect();
 
@@ -22,6 +17,13 @@ fn group(entries: Vec<Entry>) -> Groups {
             cat_entries.push(linter.clone());
         }
     }
+
+    let collections = entries
+        .iter()
+        .cloned()
+        .filter(|e| e.ttype == Type::Collection)
+        .collect();
+
     return Groups {
         linters: linter_map,
         collections,
