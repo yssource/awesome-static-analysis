@@ -9,7 +9,8 @@ mod render;
 mod types;
 
 use render::render;
-use types::{Categories, Entry};
+use std::collections::BTreeMap;
+use types::{Catalog, Categories, Entry};
 
 fn is_sorted<T>(data: &[T]) -> bool
 where
@@ -40,17 +41,18 @@ fn read_entries(file: String) -> Result<Vec<Entry>, Box<dyn Error>> {
     let f = std::fs::File::open(file)?;
     Ok(serde_yaml::from_reader(f)?)
 }
-fn check(categories: &Categories, entries: &Vec<Entry>) -> Result<(), Box<dyn Error>> {
+
+fn validate(categories: &Categories, entries: &Vec<Entry>) -> Result<(), Box<dyn Error>> {
     if !is_sorted(&entries) {
         return Err("All list entries must be sorted".into());
     };
 
     for entry in entries {
-        for category in &entry.categories {
-            if !categories.contains(category) {
+        for tag in &entry.tags {
+            if !categories.contains(tag) {
                 return Err(format!(
-                "Unknown category `{}` for entry `{}`. It might be missing from the categories file.",
-                category, entry.name
+                "Unknown tag `{}` for entry `{}`. It might be missing from the categories file.",
+                tag , entry.name
             )
                 .into());
             }
@@ -62,14 +64,33 @@ fn check(categories: &Categories, entries: &Vec<Entry>) -> Result<(), Box<dyn Er
     Ok(())
 }
 
+fn group(categories: &Categories, entries: Vec<Entry>) -> Catalog {
+    let mut linters = BTreeMap::new();
+    let mut others = BTreeMap::new();
+    for entry in entries {
+        for tag in &entry.tags {
+            if categories.is_language(&tag) {
+                let language = linters.entry(tag.into()).or_insert_with(|| vec![]);
+                language.push(entry.clone());
+            } else {
+                let other = others.entry(tag.into()).or_insert_with(|| vec![]);
+                other.push(entry.clone());
+            }
+        }
+    }
+
+    return Catalog { linters, others };
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
     let (categories, data) = get_files()?;
     let categories = read_categories(categories)?;
     let entries = read_entries(data)?;
-    check(&categories, &entries)?;
+    validate(&categories, &entries)?;
 
+    let catalog = group(&categories, entries);
     let template = std::fs::read_to_string("src/templates/README.md")?;
-    let rendered = render(&template, entries)?;
+    let rendered = render(&template, catalog)?;
     println!("{}", rendered);
     Ok(())
 }

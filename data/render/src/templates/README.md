@@ -88,21 +88,28 @@ Also check out the sister project, [awesome-dynamic-analysis](https://github.com
 
 # Programming Languages
 
-{% for language, linters in groups.linters %} ## {{ language }}
+{% for language, linters in catalog.linters %}
 
-    {% for linter in linters -%}
-    - [{{linter.name }}]({{linter.url | safe }})
-    {%- iflinter.proprietary %}:copyright:{% endif %} {% iflinter.deprecated %}:warning:{% endif %} - {{linter.description }}
-    {% endfor %}
+## {{ language }}
+
+{% for linter in linters -%}
+
+- [{{linter.name }}]({{linter.url | safe }})
+  {%- if linter.proprietary %}:copyright:{% endif %} {% if linter.deprecated %}:warning:{% endif %} - {{linter.description }}
+  {% endfor %}
 
 {% endfor %}
 
-# More collections
+{% for category, others in catalog.others %}
 
-{% for collection in groups.collections %}
+## {{ category }}
 
-- [{{ collection.name }}]({{ collection.url | safe }}) - {{ collection.description }}
+{% for other in others %}
+
+- [{{ other.name }}]({{ other.url | safe }}) - {{ other.description }}
   {% endfor %}
+
+{% endfor %}
 
 # License
 

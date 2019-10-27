@@ -18,27 +18,24 @@ impl Categories {
         self.languages.iter().any(|lang| lang.tag == tag)
             || self.other.iter().any(|lang| lang.tag == tag)
     }
+
+    pub fn is_language(&self, tag: &str) -> bool {
+        self.languages.iter().any(|lang| lang.tag == tag)
+    }
 }
 
-#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
-#[serde(rename_all = "lowercase")]
-pub enum Type {
-    Linter,
-    Service,
-    Collection,
-}
+pub type Tags = HashSet<String>;
 
 #[derive(Clone, Debug, Serialize, Deserialize, Eq)]
 pub struct Entry {
     pub name: String,
     pub url: String,
     pub description: String,
-    pub categories: HashSet<String>,
+    // TODO #[validate(length(min = 1))]
+    pub tags: Tags,
     pub proprietary: Option<bool>,
     pub deprecated: Option<bool>,
     pub wrapper: Option<bool>,
-    #[serde(rename = "type")]
-    pub ttype: Type,
 }
 
 impl PartialEq for Entry {
@@ -60,7 +57,7 @@ impl Ord for Entry {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Groups {
-    pub collections: Vec<Entry>,
+pub struct Catalog {
     pub linters: BTreeMap<String, Vec<Entry>>,
+    pub others: BTreeMap<String, Vec<Entry>>,
 }

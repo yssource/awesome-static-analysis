@@ -1,38 +1,9 @@
-use crate::types::{Entry, Groups, Type};
-use std::collections::BTreeMap;
+use crate::types::Catalog;
 use std::error::Error;
 use tera::{Context, Tera};
 
-fn group(entries: Vec<Entry>) -> Groups {
-    let mut linter_map = BTreeMap::new();
-    let linters: Vec<Entry> = entries
-        .iter()
-        .cloned()
-        .filter(|e| e.ttype == Type::Linter)
-        .collect();
-
-    for linter in linters {
-        for category in &linter.categories {
-            let cat_entries = linter_map.entry(category.clone()).or_insert_with(|| vec![]);
-            cat_entries.push(linter.clone());
-        }
-    }
-
-    let collections = entries
-        .iter()
-        .cloned()
-        .filter(|e| e.ttype == Type::Collection)
-        .collect();
-
-    return Groups {
-        linters: linter_map,
-        collections,
-    };
-}
-
-pub fn render(template: &str, entries: Vec<Entry>) -> Result<String, Box<dyn Error>> {
+pub fn render(template: &str, catalog: Catalog) -> Result<String, Box<dyn Error>> {
     let mut context = Context::new();
-    let groups = group(entries);
-    context.insert("groups", &groups);
+    context.insert("catalog", &catalog);
     Ok(Tera::one_off(template, &context, true)?)
 }
